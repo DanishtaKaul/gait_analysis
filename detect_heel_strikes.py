@@ -267,7 +267,7 @@ for ppid in os.listdir(BASE_PATH):
         
 
         """
-        The identified peaks within a the block graph are grouped among the walk windows within the trial
+        Group the detected heel strikes into separate walking bouts
         """
 
         peaks, _ = find_peaks(
