@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
 
 """
-
-Navigate the participats data
-
-1. Loop over each of the participants with their id
-2. Within their ./UNITY/pid {id} {condidtion}/S004 folder, get
-     a. trial_results (meta_file)
-     b. tracker file csv
-     
-     
-3. Seperate the rows in trial_results and match against the trials trackers
-
+Merge each trial's metadata with its tracker files into one CSV per trial.
+For each participant, this reads trial_results.csv and the matching tracker
+files in the Unity folder, then combines them into a single CSV per trial.
 """
 
 
