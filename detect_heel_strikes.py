@@ -266,10 +266,6 @@ for ppid in os.listdir(BASE_PATH):
         )
         
 
-        """
-        Group the detected heel strikes into separate walking bouts
-        """
-
         peaks, _ = find_peaks(
             ap_rel,
             prominence=PROMINENCE,
