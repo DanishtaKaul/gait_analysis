@@ -1,4 +1,4 @@
-# Environmental Demands Outweigh Age Effects in Cortical Dynamics During Walking
+# Gait Analysis
 
 This repository contains the gait analysis code for a study investigating the effects of dim lighting on walking and obstacle navigation in young and older adults. The pipeline processes motion-capture data into gait features and analyses how lighting and obstacle conditions affect walking performance.
 
@@ -17,6 +17,7 @@ Run in this order - each script writes files the next one reads.
 5. `min_max_step_count_check.py` - flag trials with too many, too few, or duplicate steps.
 6. `random_forest_dataset.py` - build the cleaned trial list and retained-trial counts.
 7. `pooled_gait_features.py` - extract gait measures, remove outliers, and pool into one row per participant and condition. Measures: speed, stride length, stride time, step width, cadence, lateral deviation, stride length CV, stride time CV, and step width SD.
+
 Steps 1 to 5 also produce the time series used by the behavioural analysis in the [eeg_analysis](https://github.com/DanishtaKaul/eeg_analysis) repository.
 ## Analysis
 
